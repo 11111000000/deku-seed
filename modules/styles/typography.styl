@@ -1,0 +1,81 @@
+
+html
+
+  font-family $base-font
+  font-size 11px
+
+  +mobile(orientation: portrait)
+    font-size 14px
+
+  +mobile(orientation: landscape)
+    font-size 14px
+
+  +tablet(orientation: portrait)
+    font-size 15px
+
+  +tablet(orientation: landscape)
+    font-size 13px
+
+  +desktop()
+    font-size 15px
+
+  +hd()
+    font-size 16px
+
+h1, h2, h3, h4, h5, h6
+  font-family $base-font
+  font-weight lighter
+  margin-bottom: 1em
+
+h1
+  font-size 2em
+  line-height .8em
+  font-weight lighter
+  letter-spacing -.03em
+h2
+  font-size 1.75em
+  line-height 1.2em
+h3
+  font-size 1.5em
+  line-height 1.1em
+h4
+  font-size 1.20em
+  line-height 1.1em
+h5
+  font-size 1em
+  line-height 1em
+
+
+p
+  font-family $base-font
+  font-size 1em
+  line-height 1.4em
+  text-indent 1.5em
+
+
+br
+  font-size 1em
+
+hr
+  display block
+  clear both
+  height 1px
+  border none
+  margin-top 2em
+  margin-bottom 2em
+
+a, .a, .a2
+  display inline-block
+  outline none
+  cursor pointer
+  text-decoration none
+
+.a2
+  &:hover
+    text-decoration underline
+
+small
+  font-size .7em
+
+b
+  font-weight bold

@@ -1,0 +1,58 @@
+@import '~styles/defaults'
+@import '~jeet/stylus/jeet/index'
+
+.skylink
+  position relative
+  border 1px solid $base-color
+  border-radius 2px
+  padding .5em
+
+
+  .indicator
+    display inline-block
+    height 1em
+    line-height 1em
+    width 1em
+    border-radius 1em
+
+    &.loading
+      background-color blue
+
+    &.ok
+      background-color green
+
+    &.error
+      background-color red
+
+  .status
+    position absolute
+    top 1em
+    right 1em
+
+  .connection, .peers
+    border 1px solid gray
+    overflow hidden
+    margin-bottom 1em
+    ul
+      center()
+      max-height 900px
+      transition max-height .5s ease-in
+      overflow hidden
+
+      &.folded
+        max-height 0
+
+      li
+        span(1)
+        font-size 1em
+        .key
+          column(1/2)
+          text-align right
+        .value
+          column(1/2)
+          &.string
+            color green
+          &.boolean
+            color blue
+          &.number
+            color red

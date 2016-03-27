@@ -1,0 +1,23 @@
+@import '~styles/defaults'
+
+.skylink
+  position relative
+  border 1px solid $base-color
+  border-radius 2px
+  padding .5em
+
+  .indicator
+    display inline-block
+    height 1em
+    line-height 1em
+    width 1em
+    border-radius 1em
+
+    &.loading
+      background-color blue
+
+    &.ok
+      background-color green
+
+    &.error
+      background-color red

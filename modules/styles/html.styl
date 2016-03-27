@@ -1,0 +1,62 @@
+html
+  height 100%
+  overflow scroll -moz-scrollbars-none
+  -ms-overflow-style none
+  box-sizing border-box
+
+*
+  -webkit-overflow-scrolling touch
+
+*, *:before, *:after
+  box-sizing inherit
+
+::-webkit-scrollbar
+    display none
+
+body
+  color $main-text-color
+  background $main-bg-color
+  height 100%
+
+input::-ms-clear
+  display none
+
+div {
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+}
+
+textarea:focus, input:focus, button:focus
+    outline none
+
+label
+  height 1em
+  line-height 1em
+  vertical-align middle
+
+input
+  display inline-block
+  border 1px solid $base-color
+  font-family $base-font
+  vertical-align middle
+  font-size 1em
+  padding .1em .2em .1em
+  height 2em
+
+button, .button
+  display inline-block
+  position relative
+  border 0px none
+  background $base-color
+  font-family $base-font
+  color $base-contrast-color
+  vertical-align middle
+  font-size 1em
+  line-height 2em
+  height 2em
+
+h1,h2,h3,h4,h5
+  text-align center
